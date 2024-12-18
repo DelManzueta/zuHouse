@@ -13,6 +13,7 @@ const SpotifySearch = () => {
 
 	return (
 		<div className='spotifySearch'>
+			<h2>Search for a Track</h2>
 			<input
 				type='text'
 				value={query}
@@ -20,10 +21,17 @@ const SpotifySearch = () => {
 				placeholder='Search for a track'
 			/>
 			<button onClick={handleSearch}>Search</button>
+
 			<ul>
 				{results.map((track) => (
 					<li key={track.id}>
-						{track.name} by {track.artists[0].name}
+						{track.name} by {track.artist}
+						{track.preview_url && (
+							<audio
+								src={track.preview_url}
+								controls
+							/>
+						)}
 					</li>
 				))}
 			</ul>

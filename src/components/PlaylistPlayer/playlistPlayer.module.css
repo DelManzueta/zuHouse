@@ -1,16 +1,10 @@
-.spotifySearch {
+.playlistPlayer {
 	text-align: center;
 	margin: 2rem;
 }
 
-.spotifySearch input {
+.playlistPlayer button {
 	margin: 1rem;
-	padding: 0.5rem;
-	width: 60%;
-	max-width: 400px;
-}
-
-.spotifySearch button {
 	padding: 0.5rem 1rem;
 	background-color: #1db954;
 	color: white;
@@ -19,6 +13,6 @@
 	cursor: pointer;
 }
 
-.spotifySearch button:hover {
+.playlistPlayer button:hover {
 	background-color: #168f3d;
 }

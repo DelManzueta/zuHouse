@@ -1,0 +1,22 @@
+{
+  "recentTracks": [
+    {
+      "id": "1",
+      "name": "Jamming",
+      "artist": "Bob Marley & The Wailers",
+      "preview_url": "https://p.scdn.co/mp3-preview/3a4564aeb7fa.mp3"
+    },
+    {
+      "id": "2",
+      "name": "Is This Love",
+      "artist": "Bob Marley & The Wailers",
+      "preview_url": "https://p.scdn.co/mp3-preview/123456789.mp3"
+    },
+    {
+      "id": "3",
+      "name": "One Love",
+      "artist": "Bob Marley & The Wailers",
+      "preview_url": "https://p.scdn.co/mp3-preview/abcdef123456.mp3"
+    }
+  ]
+}

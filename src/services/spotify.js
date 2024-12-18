@@ -24,6 +24,7 @@ export const getAccessToken = async () => {
 	return accessToken;
 };
 
+// Export searchSpotify function
 export const searchSpotify = async (query) => {
 	const token = await getAccessToken();
 	const response = await axios.get(
@@ -36,5 +37,11 @@ export const searchSpotify = async (query) => {
 			},
 		}
 	);
-	return response.data.tracks.items;
+
+	return response.data.tracks.items.map((item) => ({
+		id: item.id,
+		name: item.name,
+		artist: item.artists[0]?.name || 'Unknown Artist',
+		preview_url: item.preview_url,
+	}));
 };
