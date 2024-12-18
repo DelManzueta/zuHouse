@@ -1,0 +1,24 @@
+.spotifySearch {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem 0;
+}
+.spotifySearch input {
+	padding: 0.5rem;
+	margin-right: 1rem;
+}
+.spotifySearch button {
+	padding: 0.5rem 1rem;
+	background-color: var(--primary-color);
+	color: var(--text-color);
+	border: none;
+	cursor: pointer;
+}
+.spotifySearch ul {
+	list-style: none;
+	padding: 0;
+}
+.spotifySearch li {
+	margin: 0.5rem 0;
+}
